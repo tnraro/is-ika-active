@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.136.0/http/server.ts";
 import { fetchIkaStatus } from "./is-ika-active.ts";
 
-async function handler(req: Request): Promise<Response> {
+async function handler(): Promise<Response> {
   const statusHtml = [
     "NO",
     `<a href="https://tibyte.net/is-kkiroserver-active/">YES, but...</a>`,

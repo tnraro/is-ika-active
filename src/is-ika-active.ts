@@ -32,10 +32,10 @@ export const fetchIkaStatus = async (): Promise<0 | 1 | 2> => {
         }
       }
       return 1;
-    } catch (e: unknown) {
+    } catch (_e: unknown) {
       return 1;
     }
-  } catch (e: unknown) {
+  } catch (_e: unknown) {
     return 0;
   }
 }
